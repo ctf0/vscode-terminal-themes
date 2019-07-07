@@ -40,7 +40,7 @@
                     "default": "3024",
                     "description": "chose a terminal theme",
                     "enum": [
-                        "Non",
+                        "Non (remove all terminal styling)",
                         "3024",
                         "Apathy",
                         "Ashes",
