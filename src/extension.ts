@@ -19,12 +19,13 @@ export function activate(context: ExtensionContext) {
         context.subscriptions.push(
             commands.registerCommand('terminal_themes.apply', async () => {
                 let items = themes.map((item) => item.name)
+                items.push("Non (remove all terminal styling)")
 
                 window.showQuickPick(items, {
                     placeHolder: 'Search Terminal Theme (up/down to preview)',
-                    onDidSelectItem: (selection) => {
+                    onDidSelectItem: async (selection) => {
                         // preview
-                        updateTerminalScheme(selection)
+                        await updateTerminalScheme(selection)
                     }
                 }).then((selection) => {
                     if (!selection) {
@@ -70,13 +71,17 @@ function getSettings() {
  * @return  {[type]}         [return description]
  */
 function getScheme(style) {
-    let scheme = themes.filter((item) => item.name == style)
+    if (!style.includes('Non')) {
+        let scheme = themes.filter((item) => item.name == style)
 
-    if (scheme.length) {
-        return scheme[0].colors
+        if (scheme.length) {
+            return scheme[0].colors
+        }
+
+        return window.showErrorMessage('sorry, theme not found!')
     }
 
-    window.showErrorMessage('sorry, theme not found!')
+    return {}
 }
 /**
  * apply scheme
@@ -87,17 +92,11 @@ function getScheme(style) {
  */
 async function updateTerminalScheme(style) {
     let current = workspace.getConfiguration().get('workbench.colorCustomizations')
-    let data
+    let data = await clearOldStyles(current)
+    let scheme = await getScheme(style)
+    data = Object.assign(data, scheme)
 
-    if (style == 'Non') {
-        data = clearOldStyles(current)
-    } else {
-        data = clearOldStyles(current)
-        data = Object.assign(data, getScheme(style))
-    }
-
-    await updateConfig('workbench.colorCustomizations', data)
-    return
+    return updateConfig('workbench.colorCustomizations', data)
 }
 
 /**

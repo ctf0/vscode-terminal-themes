@@ -9,3 +9,6 @@
 
 ### 0.0.3
 - get the extension one step closer to vscode theme selector
+
+### 0.0.4
+- dont show a message when selecting "Non"
