@@ -1,5 +1,7 @@
 'use strict';
 
+import * as fs from 'fs'
+import * as path from 'path'
 import {
     window,
     commands,
@@ -7,10 +9,12 @@ import {
     ExtensionContext
 } from 'vscode';
 
-let themes
+let themes = []
+const removeTheme = "Non (remove all terminal styling)"
+const colorsConfig = 'workbench.colorCustomizations'
 
 export function activate(context: ExtensionContext) {
-    themes = require('./../assets/themes.json')
+    loadThemes()
     const settings = getSettings()
     let enabled = settings.enable
 
@@ -19,7 +23,7 @@ export function activate(context: ExtensionContext) {
         context.subscriptions.push(
             commands.registerCommand('terminal_themes.apply', async () => {
                 let items = themes.map((item) => item.name)
-                items.push("Non (remove all terminal styling)")
+                items.push(removeTheme)
 
                 window.showQuickPick(items, {
                     placeHolder: 'Search Terminal Theme (up/down to preview)',
@@ -54,6 +58,14 @@ export function activate(context: ExtensionContext) {
 
 export function deactivate() { }
 
+function loadThemes() {
+    const folder = path.join(__dirname, './../themes');
+
+    fs.readdirSync(folder).forEach((file) => {
+        themes.push(...require(`${folder}/${file}`))
+    })
+}
+
 function getSettings() {
     return workspace.getConfiguration('terminal_themes')
 }
@@ -65,22 +77,24 @@ function getScheme(style) {
         return scheme[0].colors
     }
 
-    return window.showErrorMessage('sorry, theme not found!')
+    return false
 }
 
 async function updateTerminalScheme(style) {
-    let current = workspace.getConfiguration().get('workbench.colorCustomizations')
+    let current = workspace.getConfiguration().get(colorsConfig)
     let data = await clearOldStyles(current)
 
-    if (!style.includes('Non')) {
+    if (style != removeTheme) {
         let scheme = await getScheme(style)
 
-        if (scheme instanceof Object) {
-            data = Object.assign(data, scheme)
+        if (!scheme) {
+            return window.showErrorMessage('sorry, theme not found!')
         }
+
+        data = Object.assign(data, scheme)
     }
 
-    return updateConfig('workbench.colorCustomizations', data)
+    return await updateConfig(colorsConfig, data)
 }
 
 function updateConfig(key, data, msg: any = true) {

@@ -1,6 +1,6 @@
 [
     {
-        "name": "3024",
+        "name": "3024 (base16)",
         "colors": {
             "terminal.background": "#090300",
             "terminal.foreground": "#A5A2A2",
@@ -25,7 +25,7 @@
         }
     },
     {
-        "name": "Apathy",
+        "name": "Apathy (base16)",
         "colors": {
             "terminal.background": "#031A16",
             "terminal.foreground": "#81B5AC",
@@ -50,7 +50,7 @@
         }
     },
     {
-        "name": "Ashes",
+        "name": "Ashes (base16)",
         "colors": {
             "terminal.background": "#1C2023",
             "terminal.foreground": "#C7CCD1",
@@ -75,7 +75,7 @@
         }
     },
     {
-        "name": "Atelier Cave Light",
+        "name": "Atelier Cave Light (base16)",
         "colors": {
             "terminal.background": "#EFECF4",
             "terminal.foreground": "#585260",
@@ -100,7 +100,7 @@
         }
     },
     {
-        "name": "Atelier Cave",
+        "name": "Atelier Cave (base16)",
         "colors": {
             "terminal.background": "#19171C",
             "terminal.foreground": "#8B8792",
@@ -125,7 +125,7 @@
         }
     },
     {
-        "name": "Atelier Dune Light",
+        "name": "Atelier Dune Light (base16)",
         "colors": {
             "terminal.background": "#FEFBEC",
             "terminal.foreground": "#6E6B5E",
@@ -150,7 +150,7 @@
         }
     },
     {
-        "name": "Atelier Dune",
+        "name": "Atelier Dune (base16)",
         "colors": {
             "terminal.background": "#20201D",
             "terminal.foreground": "#A6A28C",
@@ -175,7 +175,7 @@
         }
     },
     {
-        "name": "Atelier Estuary Light",
+        "name": "Atelier Estuary Light (base16)",
         "colors": {
             "terminal.background": "#F4F3EC",
             "terminal.foreground": "#5F5E4E",
@@ -200,7 +200,7 @@
         }
     },
     {
-        "name": "Atelier Estuary",
+        "name": "Atelier Estuary (base16)",
         "colors": {
             "terminal.background": "#22221B",
             "terminal.foreground": "#929181",
@@ -225,7 +225,7 @@
         }
     },
     {
-        "name": "Atelier Forest Light",
+        "name": "Atelier Forest Light (base16)",
         "colors": {
             "terminal.background": "#F1EFEE",
             "terminal.foreground": "#68615E",
@@ -250,7 +250,7 @@
         }
     },
     {
-        "name": "Atelier Forest",
+        "name": "Atelier Forest (base16)",
         "colors": {
             "terminal.background": "#1B1918",
             "terminal.foreground": "#A8A19F",
@@ -275,7 +275,7 @@
         }
     },
     {
-        "name": "Atelier Heath Light",
+        "name": "Atelier Heath Light (base16)",
         "colors": {
             "terminal.background": "#F7F3F7",
             "terminal.foreground": "#695D69",
@@ -300,7 +300,7 @@
         }
     },
     {
-        "name": "Atelier Heath",
+        "name": "Atelier Heath (base16)",
         "colors": {
             "terminal.background": "#1B181B",
             "terminal.foreground": "#AB9BAB",
@@ -325,7 +325,7 @@
         }
     },
     {
-        "name": "Atelier Lakeside Light",
+        "name": "Atelier Lakeside Light (base16)",
         "colors": {
             "terminal.background": "#EBF8FF",
             "terminal.foreground": "#516D7B",
@@ -350,7 +350,7 @@
         }
     },
     {
-        "name": "Atelier Lakeside",
+        "name": "Atelier Lakeside (base16)",
         "colors": {
             "terminal.background": "#161B1D",
             "terminal.foreground": "#7EA2B4",
@@ -375,7 +375,7 @@
         }
     },
     {
-        "name": "Atelier Plateau Light",
+        "name": "Atelier Plateau Light (base16)",
         "colors": {
             "terminal.background": "#F4ECEC",
             "terminal.foreground": "#585050",
@@ -400,7 +400,7 @@
         }
     },
     {
-        "name": "Atelier Plateau",
+        "name": "Atelier Plateau (base16)",
         "colors": {
             "terminal.background": "#1B1818",
             "terminal.foreground": "#8A8585",
@@ -425,7 +425,7 @@
         }
     },
     {
-        "name": "Atelier Savanna Light",
+        "name": "Atelier Savanna Light (base16)",
         "colors": {
             "terminal.background": "#ECF4EE",
             "terminal.foreground": "#526057",
@@ -450,7 +450,7 @@
         }
     },
     {
-        "name": "Atelier Savanna",
+        "name": "Atelier Savanna (base16)",
         "colors": {
             "terminal.background": "#171C19",
             "terminal.foreground": "#87928A",
@@ -475,7 +475,7 @@
         }
     },
     {
-        "name": "Atelier Seaside Light",
+        "name": "Atelier Seaside Light (base16)",
         "colors": {
             "terminal.background": "#F4FBF4",
             "terminal.foreground": "#5E6E5E",
@@ -500,7 +500,7 @@
         }
     },
     {
-        "name": "Atelier Seaside",
+        "name": "Atelier Seaside (base16)",
         "colors": {
             "terminal.background": "#131513",
             "terminal.foreground": "#8CA68C",
@@ -525,7 +525,7 @@
         }
     },
     {
-        "name": "Atelier Sulphurpool Light",
+        "name": "Atelier Sulphurpool Light (base16)",
         "colors": {
             "terminal.background": "#F5F7FF",
             "terminal.foreground": "#5E6687",
@@ -550,7 +550,7 @@
         }
     },
     {
-        "name": "Atelier Sulphurpool",
+        "name": "Atelier Sulphurpool (base16)",
         "colors": {
             "terminal.background": "#202746",
             "terminal.foreground": "#979DB4",
@@ -575,7 +575,7 @@
         }
     },
     {
-        "name": "Bespin",
+        "name": "Bespin (base16)",
         "colors": {
             "terminal.background": "#28211C",
             "terminal.foreground": "#8A8986",
@@ -600,7 +600,7 @@
         }
     },
     {
-        "name": "Brewer",
+        "name": "Brewer (base16)",
         "colors": {
             "terminal.background": "#0C0D0E",
             "terminal.foreground": "#B7B8B9",
@@ -625,7 +625,7 @@
         }
     },
     {
-        "name": "Bright",
+        "name": "Bright (base16)",
         "colors": {
             "terminal.background": "#000000",
             "terminal.foreground": "#E0E0E0",
@@ -650,7 +650,7 @@
         }
     },
     {
-        "name": "Brushtrees Dark",
+        "name": "Brushtrees Dark (base16)",
         "colors": {
             "terminal.background": "#485867",
             "terminal.foreground": "#B0C5C8",
@@ -675,7 +675,7 @@
         }
     },
     {
-        "name": "Brushtrees",
+        "name": "Brushtrees (base16)",
         "colors": {
             "terminal.background": "#E3EFEF",
             "terminal.foreground": "#6D828E",
@@ -700,7 +700,7 @@
         }
     },
     {
-        "name": "Chalk",
+        "name": "Chalk (base16)",
         "colors": {
             "terminal.background": "#151515",
             "terminal.foreground": "#D0D0D0",
@@ -725,7 +725,7 @@
         }
     },
     {
-        "name": "Circus",
+        "name": "Circus (base16)",
         "colors": {
             "terminal.background": "#191919",
             "terminal.foreground": "#A7A7A7",
@@ -750,7 +750,7 @@
         }
     },
     {
-        "name": "Classic Dark",
+        "name": "Classic Dark (base16)",
         "colors": {
             "terminal.background": "#151515",
             "terminal.foreground": "#D0D0D0",
@@ -775,7 +775,7 @@
         }
     },
     {
-        "name": "Classic Light",
+        "name": "Classic Light (base16)",
         "colors": {
             "terminal.background": "#F5F5F5",
             "terminal.foreground": "#303030",
@@ -800,7 +800,7 @@
         }
     },
     {
-        "name": "Codeschool",
+        "name": "Codeschool (base16)",
         "colors": {
             "terminal.background": "#232C31",
             "terminal.foreground": "#9EA7A6",
@@ -825,7 +825,7 @@
         }
     },
     {
-        "name": "Cupcake",
+        "name": "Cupcake (base16)",
         "colors": {
             "terminal.background": "#FBF1F2",
             "terminal.foreground": "#8B8198",
@@ -850,7 +850,7 @@
         }
     },
     {
-        "name": "Cupertino",
+        "name": "Cupertino (base16)",
         "colors": {
             "terminal.background": "#FFFFFF",
             "terminal.foreground": "#404040",
@@ -875,7 +875,7 @@
         }
     },
     {
-        "name": "Darktooth",
+        "name": "Darktooth (base16)",
         "colors": {
             "terminal.background": "#1D2021",
             "terminal.foreground": "#A89984",
@@ -900,7 +900,7 @@
         }
     },
     {
-        "name": "Default Dark",
+        "name": "Default Dark (base16)",
         "colors": {
             "terminal.background": "#181818",
             "terminal.foreground": "#D8D8D8",
@@ -925,7 +925,7 @@
         }
     },
     {
-        "name": "Default Light",
+        "name": "Default Light (base16)",
         "colors": {
             "terminal.background": "#F8F8F8",
             "terminal.foreground": "#383838",
@@ -950,7 +950,7 @@
         }
     },
     {
-        "name": "Dracula",
+        "name": "Dracula (base16)",
         "colors": {
             "terminal.background": "#282936",
             "terminal.foreground": "#E9E9F4",
@@ -975,7 +975,7 @@
         }
     },
     {
-        "name": "Eighties",
+        "name": "Eighties (base16)",
         "colors": {
             "terminal.background": "#2D2D2D",
             "terminal.foreground": "#D3D0C8",
@@ -1000,7 +1000,7 @@
         }
     },
     {
-        "name": "Embers",
+        "name": "Embers (base16)",
         "colors": {
             "terminal.background": "#16130F",
             "terminal.foreground": "#A39A90",
@@ -1025,7 +1025,7 @@
         }
     },
     {
-        "name": "Flat",
+        "name": "Flat (base16)",
         "colors": {
             "terminal.background": "#2C3E50",
             "terminal.foreground": "#E0E0E0",
@@ -1050,7 +1050,7 @@
         }
     },
     {
-        "name": "Github",
+        "name": "Github (base16)",
         "colors": {
             "terminal.background": "#FFFFFF",
             "terminal.foreground": "#333333",
@@ -1075,7 +1075,7 @@
         }
     },
     {
-        "name": "Google Dark",
+        "name": "Google Dark (base16)",
         "colors": {
             "terminal.background": "#1D1F21",
             "terminal.foreground": "#C5C8C6",
@@ -1100,7 +1100,7 @@
         }
     },
     {
-        "name": "Google Light",
+        "name": "Google Light (base16)",
         "colors": {
             "terminal.background": "#FFFFFF",
             "terminal.foreground": "#373B41",
@@ -1125,7 +1125,7 @@
         }
     },
     {
-        "name": "Grayscale Dark",
+        "name": "Grayscale Dark (base16)",
         "colors": {
             "terminal.background": "#101010",
             "terminal.foreground": "#B9B9B9",
@@ -1150,7 +1150,7 @@
         }
     },
     {
-        "name": "Grayscale Light",
+        "name": "Grayscale Light (base16)",
         "colors": {
             "terminal.background": "#F7F7F7",
             "terminal.foreground": "#464646",
@@ -1175,7 +1175,7 @@
         }
     },
     {
-        "name": "Greenscreen",
+        "name": "Greenscreen (base16)",
         "colors": {
             "terminal.background": "#001100",
             "terminal.foreground": "#00BB00",
@@ -1200,7 +1200,7 @@
         }
     },
     {
-        "name": "Gruvbox Dark Hard",
+        "name": "Gruvbox Dark Hard (base16)",
         "colors": {
             "terminal.background": "#1D2021",
             "terminal.foreground": "#D5C4A1",
@@ -1225,7 +1225,7 @@
         }
     },
     {
-        "name": "Gruvbox Dark Medium",
+        "name": "Gruvbox Dark Medium (base16)",
         "colors": {
             "terminal.background": "#282828",
             "terminal.foreground": "#D5C4A1",
@@ -1250,7 +1250,7 @@
         }
     },
     {
-        "name": "Gruvbox Dark Pale",
+        "name": "Gruvbox Dark Pale (base16)",
         "colors": {
             "terminal.background": "#262626",
             "terminal.foreground": "#DAB997",
@@ -1275,7 +1275,7 @@
         }
     },
     {
-        "name": "Gruvbox Dark Soft",
+        "name": "Gruvbox Dark Soft (base16)",
         "colors": {
             "terminal.background": "#32302F",
             "terminal.foreground": "#D5C4A1",
@@ -1300,7 +1300,7 @@
         }
     },
     {
-        "name": "Gruvbox Light Hard",
+        "name": "Gruvbox Light Hard (base16)",
         "colors": {
             "terminal.background": "#F9F5D7",
             "terminal.foreground": "#504945",
@@ -1325,7 +1325,7 @@
         }
     },
     {
-        "name": "Gruvbox Light Medium",
+        "name": "Gruvbox Light Medium (base16)",
         "colors": {
             "terminal.background": "#FBF1C7",
             "terminal.foreground": "#504945",
@@ -1350,7 +1350,7 @@
         }
     },
     {
-        "name": "Gruvbox Light Soft",
+        "name": "Gruvbox Light Soft (base16)",
         "colors": {
             "terminal.background": "#F2E5BC",
             "terminal.foreground": "#504945",
@@ -1375,7 +1375,7 @@
         }
     },
     {
-        "name": "Harmonic Dark",
+        "name": "Harmonic Dark (base16)",
         "colors": {
             "terminal.background": "#0B1C2C",
             "terminal.foreground": "#CBD6E2",
@@ -1400,7 +1400,7 @@
         }
     },
     {
-        "name": "Harmonic Light",
+        "name": "Harmonic Light (base16)",
         "colors": {
             "terminal.background": "#F7F9FB",
             "terminal.foreground": "#405C79",
@@ -1425,7 +1425,7 @@
         }
     },
     {
-        "name": "Hopscotch",
+        "name": "Hopscotch (base16)",
         "colors": {
             "terminal.background": "#322931",
             "terminal.foreground": "#B9B5B8",
@@ -1450,7 +1450,7 @@
         }
     },
     {
-        "name": "Icy",
+        "name": "Icy (base16)",
         "colors": {
             "terminal.background": "#222222",
             "terminal.foreground": "#BDBDBD",
@@ -1475,7 +1475,7 @@
         }
     },
     {
-        "name": "Irblack",
+        "name": "Irblack (base16)",
         "colors": {
             "terminal.background": "#000000",
             "terminal.foreground": "#B5B3AA",
@@ -1500,7 +1500,7 @@
         }
     },
     {
-        "name": "Isotope",
+        "name": "Isotope (base16)",
         "colors": {
             "terminal.background": "#000000",
             "terminal.foreground": "#D0D0D0",
@@ -1525,7 +1525,7 @@
         }
     },
     {
-        "name": "Macintosh",
+        "name": "Macintosh (base16)",
         "colors": {
             "terminal.background": "#000000",
             "terminal.foreground": "#C0C0C0",
@@ -1550,7 +1550,7 @@
         }
     },
     {
-        "name": "Marrakesh",
+        "name": "Marrakesh (base16)",
         "colors": {
             "terminal.background": "#201602",
             "terminal.foreground": "#948E48",
@@ -1575,7 +1575,7 @@
         }
     },
     {
-        "name": "Materia",
+        "name": "Materia (base16)",
         "colors": {
             "terminal.background": "#263238",
             "terminal.foreground": "#CDD3DE",
@@ -1600,7 +1600,7 @@
         }
     },
     {
-        "name": "Material Darker",
+        "name": "Material Darker (base16)",
         "colors": {
             "terminal.background": "#212121",
             "terminal.foreground": "#EEFFFF",
@@ -1625,7 +1625,7 @@
         }
     },
     {
-        "name": "Material Lighter",
+        "name": "Material Lighter (base16)",
         "colors": {
             "terminal.background": "#FAFAFA",
             "terminal.foreground": "#80CBC4",
@@ -1650,7 +1650,7 @@
         }
     },
     {
-        "name": "Material Palenight",
+        "name": "Material Palenight (base16)",
         "colors": {
             "terminal.background": "#292D3E",
             "terminal.foreground": "#959DCB",
@@ -1675,7 +1675,7 @@
         }
     },
     {
-        "name": "Material",
+        "name": "Material (base16)",
         "colors": {
             "terminal.background": "#263238",
             "terminal.foreground": "#EEFFFF",
@@ -1700,7 +1700,7 @@
         }
     },
     {
-        "name": "Mellow Purple",
+        "name": "Mellow Purple (base16)",
         "colors": {
             "terminal.background": "#1E0528",
             "terminal.foreground": "#FFEEFF",
@@ -1725,7 +1725,7 @@
         }
     },
     {
-        "name": "Mexico Light",
+        "name": "Mexico Light (base16)",
         "colors": {
             "terminal.background": "#F8F8F8",
             "terminal.foreground": "#383838",
@@ -1750,7 +1750,7 @@
         }
     },
     {
-        "name": "Mocha",
+        "name": "Mocha (base16)",
         "colors": {
             "terminal.background": "#3B3228",
             "terminal.foreground": "#D0C8C6",
@@ -1775,7 +1775,7 @@
         }
     },
     {
-        "name": "Monokai",
+        "name": "Monokai (base16)",
         "colors": {
             "terminal.background": "#272822",
             "terminal.foreground": "#F8F8F2",
@@ -1800,7 +1800,7 @@
         }
     },
     {
-        "name": "Nord",
+        "name": "Nord (base16)",
         "colors": {
             "terminal.background": "#2E3440",
             "terminal.foreground": "#E5E9F0",
@@ -1825,7 +1825,7 @@
         }
     },
     {
-        "name": "Ocean",
+        "name": "Ocean (base16)",
         "colors": {
             "terminal.background": "#2B303B",
             "terminal.foreground": "#C0C5CE",
@@ -1850,7 +1850,7 @@
         }
     },
     {
-        "name": "Oceanicnext",
+        "name": "Oceanicnext (base16)",
         "colors": {
             "terminal.background": "#1B2B34",
             "terminal.foreground": "#C0C5CE",
@@ -1875,7 +1875,7 @@
         }
     },
     {
-        "name": "One Light",
+        "name": "One Light (base16)",
         "colors": {
             "terminal.background": "#FAFAFA",
             "terminal.foreground": "#383A42",
@@ -1900,7 +1900,7 @@
         }
     },
     {
-        "name": "Onedark",
+        "name": "Onedark (base16)",
         "colors": {
             "terminal.background": "#282C34",
             "terminal.foreground": "#ABB2BF",
@@ -1925,7 +1925,7 @@
         }
     },
     {
-        "name": "Paraiso",
+        "name": "Paraiso (base16)",
         "colors": {
             "terminal.background": "#2F1E2E",
             "terminal.foreground": "#A39E9B",
@@ -1950,7 +1950,7 @@
         }
     },
     {
-        "name": "Phd",
+        "name": "Phd (base16)",
         "colors": {
             "terminal.background": "#061229",
             "terminal.foreground": "#B8BBC2",
@@ -1975,7 +1975,7 @@
         }
     },
     {
-        "name": "Pico",
+        "name": "Pico (base16)",
         "colors": {
             "terminal.background": "#000000",
             "terminal.foreground": "#5F574F",
@@ -2000,7 +2000,7 @@
         }
     },
     {
-        "name": "Pop",
+        "name": "Pop (base16)",
         "colors": {
             "terminal.background": "#000000",
             "terminal.foreground": "#D0D0D0",
@@ -2025,7 +2025,7 @@
         }
     },
     {
-        "name": "Porple",
+        "name": "Porple (base16)",
         "colors": {
             "terminal.background": "#292C36",
             "terminal.foreground": "#D8D8D8",
@@ -2050,7 +2050,7 @@
         }
     },
     {
-        "name": "Railscasts",
+        "name": "Railscasts (base16)",
         "colors": {
             "terminal.background": "#2B2B2B",
             "terminal.foreground": "#E6E1DC",
@@ -2075,7 +2075,7 @@
         }
     },
     {
-        "name": "Rebecca",
+        "name": "Rebecca (base16)",
         "colors": {
             "terminal.background": "#292A44",
             "terminal.foreground": "#F1EFF8",
@@ -2100,7 +2100,7 @@
         }
     },
     {
-        "name": "Seti",
+        "name": "Seti (base16)",
         "colors": {
             "terminal.background": "#151718",
             "terminal.foreground": "#D6D6D6",
@@ -2125,7 +2125,7 @@
         }
     },
     {
-        "name": "Shapeshifter",
+        "name": "Shapeshifter (base16)",
         "colors": {
             "terminal.background": "#F9F9F9",
             "terminal.foreground": "#102015",
@@ -2150,7 +2150,7 @@
         }
     },
     {
-        "name": "Solarflare",
+        "name": "Solarflare (base16)",
         "colors": {
             "terminal.background": "#18262F",
             "terminal.foreground": "#A6AFB8",
@@ -2175,7 +2175,7 @@
         }
     },
     {
-        "name": "Solarized Dark",
+        "name": "Solarized Dark (base16)",
         "colors": {
             "terminal.background": "#002B36",
             "terminal.foreground": "#93A1A1",
@@ -2200,7 +2200,7 @@
         }
     },
     {
-        "name": "Solarized Light",
+        "name": "Solarized Light (base16)",
         "colors": {
             "terminal.background": "#FDF6E3",
             "terminal.foreground": "#586E75",
@@ -2225,7 +2225,7 @@
         }
     },
     {
-        "name": "Spacemacs",
+        "name": "Spacemacs (base16)",
         "colors": {
             "terminal.background": "#1F2022",
             "terminal.foreground": "#A3A3A3",
@@ -2250,7 +2250,7 @@
         }
     },
     {
-        "name": "Summerfruit Dark",
+        "name": "Summerfruit Dark (base16)",
         "colors": {
             "terminal.background": "#151515",
             "terminal.foreground": "#D0D0D0",
@@ -2275,7 +2275,7 @@
         }
     },
     {
-        "name": "Summerfruit Light",
+        "name": "Summerfruit Light (base16)",
         "colors": {
             "terminal.background": "#FFFFFF",
             "terminal.foreground": "#101010",
@@ -2300,7 +2300,7 @@
         }
     },
     {
-        "name": "Tomorrow Night",
+        "name": "Tomorrow Night (base16)",
         "colors": {
             "terminal.background": "#1D1F21",
             "terminal.foreground": "#C5C8C6",
@@ -2325,7 +2325,7 @@
         }
     },
     {
-        "name": "Tomorrow",
+        "name": "Tomorrow (base16)",
         "colors": {
             "terminal.background": "#FFFFFF",
             "terminal.foreground": "#4D4D4C",
@@ -2350,7 +2350,7 @@
         }
     },
     {
-        "name": "Tube",
+        "name": "Tube (base16)",
         "colors": {
             "terminal.background": "#231F20",
             "terminal.foreground": "#D9D8D8",
@@ -2375,7 +2375,7 @@
         }
     },
     {
-        "name": "Twilight",
+        "name": "Twilight (base16)",
         "colors": {
             "terminal.background": "#1E1E1E",
             "terminal.foreground": "#A7A7A7",
@@ -2400,7 +2400,7 @@
         }
     },
     {
-        "name": "Unikitty Dark",
+        "name": "Unikitty Dark (base16)",
         "colors": {
             "terminal.background": "#2E2A31",
             "terminal.foreground": "#BCBABE",
@@ -2425,7 +2425,7 @@
         }
     },
     {
-        "name": "Unikitty Light",
+        "name": "Unikitty Light (base16)",
         "colors": {
             "terminal.background": "#FFFFFF",
             "terminal.foreground": "#6C696E",
@@ -2450,7 +2450,7 @@
         }
     },
     {
-        "name": "Woodland",
+        "name": "Woodland (base16)",
         "colors": {
             "terminal.background": "#231E18",
             "terminal.foreground": "#CABCB1",
@@ -2475,7 +2475,7 @@
         }
     },
     {
-        "name": "Xcode Dusk",
+        "name": "Xcode Dusk (base16)",
         "colors": {
             "terminal.background": "#282B35",
             "terminal.foreground": "#939599",
@@ -2500,7 +2500,7 @@
         }
     },
     {
-        "name": "Zenburn",
+        "name": "Zenburn (base16)",
         "colors": {
             "terminal.background": "#3F3F3F",
             "terminal.foreground": "#DCDCCC",

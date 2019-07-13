@@ -15,3 +15,6 @@
 
 ### 0.0.5
 - cleanups
+
+### 0.0.6
+- better support for new themes
