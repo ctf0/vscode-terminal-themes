@@ -12,3 +12,6 @@
 
 ### 0.0.4
 - dont show a message when selecting "Non"
+
+### 0.0.5
+- cleanups

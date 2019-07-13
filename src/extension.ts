@@ -23,9 +23,9 @@ export function activate(context: ExtensionContext) {
 
                 window.showQuickPick(items, {
                     placeHolder: 'Search Terminal Theme (up/down to preview)',
-                    onDidSelectItem: async (selection) => {
+                    onDidSelectItem: (selection) => {
                         // preview
-                        await updateTerminalScheme(selection)
+                        updateTerminalScheme(selection)
                     }
                 }).then((selection) => {
                     if (!selection) {
@@ -54,60 +54,35 @@ export function activate(context: ExtensionContext) {
 
 export function deactivate() { }
 
-/**
- * get settings
- *
- * @return  {[type]}  [return description]
- */
 function getSettings() {
     return workspace.getConfiguration('terminal_themes')
 }
 
-/**
- * get scheme
- *
- * @param   {[type]}  style  [style description]
- *
- * @return  {[type]}         [return description]
- */
 function getScheme(style) {
-    if (!style.includes('Non')) {
-        let scheme = themes.filter((item) => item.name == style)
+    let scheme = themes.filter((item) => item.name == style)
 
-        if (scheme.length) {
-            return scheme[0].colors
-        }
-
-        return window.showErrorMessage('sorry, theme not found!')
+    if (scheme.length) {
+        return scheme[0].colors
     }
 
-    return {}
+    return window.showErrorMessage('sorry, theme not found!')
 }
-/**
- * apply scheme
- *
- * @param   {[type]}  style  [style description]
- *
- * @return  {[type]}         [return description]
- */
+
 async function updateTerminalScheme(style) {
     let current = workspace.getConfiguration().get('workbench.colorCustomizations')
     let data = await clearOldStyles(current)
-    let scheme = await getScheme(style)
-    data = Object.assign(data, scheme)
+
+    if (!style.includes('Non')) {
+        let scheme = await getScheme(style)
+
+        if (scheme instanceof Object) {
+            data = Object.assign(data, scheme)
+        }
+    }
 
     return updateConfig('workbench.colorCustomizations', data)
 }
 
-/**
- * update user config
- *
- * @param   {[type]}  key   [key description]
- * @param   {[type]}  data  [data description]
- * @param   {[type]}  msg  [data description]
- *
- * @return  {[type]}        [return description]
- */
 function updateConfig(key, data, msg: any = true) {
     return workspace.getConfiguration().update(key, data, true)
         .then(
@@ -116,13 +91,6 @@ function updateConfig(key, data, msg: any = true) {
         );
 }
 
-/**
- * clear old styles from user settings
- *
- * @param   {[type]}  list  [list description]
- *
- * @return  {[type]}        [return description]
- */
 function clearOldStyles(list) {
     return Object.keys(list).reduce((object, key) => {
         if (!key.includes('terminal')) {
