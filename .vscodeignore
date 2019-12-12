@@ -10,3 +10,4 @@ vsc-extension-quickstart.md
 .history
 jsconfig.json
 .eslintrc.json
+yarn.*
