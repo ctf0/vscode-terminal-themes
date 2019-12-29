@@ -4,3 +4,4 @@ node_modules
 *.vsix
 yarn.*
 .DS_Store
+package-lock.json

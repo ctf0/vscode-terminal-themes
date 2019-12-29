@@ -2,7 +2,7 @@
     "name": "vscode-terminal-themes",
     "displayName": "Vscode Terminal Themes",
     "description": "Terminal Themes for Visual Studio Code",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "ctf0",
     "engines": {
         "vscode": "^1.10.0"
@@ -21,7 +21,8 @@
         "terminal"
     ],
     "authors": [
-        "Glitchbone"
+        "Glitchbone",
+        "ctf0"
     ],
     "activationEvents": [
         "*"
@@ -95,6 +96,7 @@
                         "Google Dark (base16)",
                         "Google Light (base16)",
                         "Grayscale Dark (base16)",
+                        "Grayscale Dark (red)",
                         "Grayscale Light (base16)",
                         "Greenscreen (base16)",
                         "Gruvbox Dark Hard (base16)",

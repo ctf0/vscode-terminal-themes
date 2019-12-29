@@ -1,1 +1,27 @@
-[]
+[
+    {
+        "name": "Grayscale Dark (red)",
+        "colors": {
+            "terminal.background": "#1a1a1a",
+            "terminal.foreground": "#B9B9B9",
+            "terminalCursor.background": "#B9B9B9",
+            "terminalCursor.foreground": "#ff4545",
+            "terminal.ansiBlack": "#F7F7F7",
+            "terminal.ansiBlue": "#686868",
+            "terminal.ansiBrightBlack": "#525252",
+            "terminal.ansiBrightBlue": "#686868",
+            "terminal.ansiBrightCyan": "#868686",
+            "terminal.ansiBrightGreen": "#8E8E8E",
+            "terminal.ansiBrightMagenta": "#747474",
+            "terminal.ansiBrightRed": "#7C7C7C",
+            "terminal.ansiBrightWhite": "#F7F7F7",
+            "terminal.ansiBrightYellow": "#A0A0A0",
+            "terminal.ansiCyan": "#868686",
+            "terminal.ansiGreen": "#ff4545",
+            "terminal.ansiMagenta": "#747474",
+            "terminal.ansiRed": "#7C7C7C",
+            "terminal.ansiWhite": "#B9B9B9",
+            "terminal.ansiYellow": "#ff4545"
+        }
+    }
+]
