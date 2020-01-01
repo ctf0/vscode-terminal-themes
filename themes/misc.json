@@ -2,9 +2,9 @@
     {
         "name": "Grayscale Dark (red)",
         "colors": {
-            "terminal.background": "#1a1a1a",
+            "terminal.background": "#101010",
             "terminal.foreground": "#B9B9B9",
-            "terminalCursor.background": "#B9B9B9",
+            "terminalCursor.background": "#F7F7F7",
             "terminalCursor.foreground": "#ff4545",
             "terminal.ansiBlack": "#F7F7F7",
             "terminal.ansiBlue": "#686868",
@@ -21,7 +21,34 @@
             "terminal.ansiMagenta": "#747474",
             "terminal.ansiRed": "#7C7C7C",
             "terminal.ansiWhite": "#B9B9B9",
-            "terminal.ansiYellow": "#ff4545"
+            "terminal.ansiYellow": "#ff4545",
+            "terminal.selectionBackground": "#F7F7F730"
+        }
+    },
+    {
+        "name": "Grayscale Light (red)",
+        "colors": {
+            "terminal.background": "#F7F7F7",
+            "terminal.foreground": "#101010",
+            "terminalCursor.background": "#F7F7F7",
+            "terminalCursor.foreground": "#464646",
+            "terminal.ansiBlack": "#F7F7F7",
+            "terminal.ansiBlue": "#464646",
+            "terminal.ansiBrightBlack": "#ABABAB",
+            "terminal.ansiBrightBlue": "#686868",
+            "terminal.ansiBrightCyan": "#868686",
+            "terminal.ansiBrightGreen": "#8E8E8E",
+            "terminal.ansiBrightMagenta": "#747474",
+            "terminal.ansiBrightRed": "#7C7C7C",
+            "terminal.ansiBrightWhite": "#101010",
+            "terminal.ansiBrightYellow": "#A0A0A0",
+            "terminal.ansiCyan": "#868686",
+            "terminal.ansiGreen": "#ff4545",
+            "terminal.ansiMagenta": "#747474",
+            "terminal.ansiRed": "#7C7C7C",
+            "terminal.ansiWhite": "#464646",
+            "terminal.ansiYellow": "#ff4545",
+            "terminal.selectionBackground": "#46464630"
         }
     }
 ]

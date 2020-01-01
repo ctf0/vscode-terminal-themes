@@ -28,3 +28,8 @@
 ### 0.0.7
 
 - add debounce for selection
+
+### 0.0.9
+
+- cleanup
+- remove `enable` option

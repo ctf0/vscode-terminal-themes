@@ -7,65 +7,57 @@ const removeTheme = 'Non (remove all terminal styling)'
 const colorsConfig = 'workbench.colorCustomizations'
 const debounce = require('lodash.debounce')
 
-function activate(context) {
-    loadThemes()
-    const settings = getSettings()
-    let enabled = settings.enable
+async function activate(context) {
+    await loadThemes()
 
     // quick pick menu
-    if (enabled) {
-        context.subscriptions.push(
-            vscode.commands.registerCommand('terminal_themes.apply', async () => {
-                let items = await themes.map((item) => item.name)
-                items.push(removeTheme)
+    context.subscriptions.push(
+        vscode.commands.registerCommand('terminal_themes.apply', async () => {
+            let items = themes.map((item) => item.name).concat([removeTheme])
 
-                vscode.window.showQuickPick(items, {
-                    ignoreFocusOut: true,
-                    placeHolder: 'Search Terminal Theme (up/down to preview)',
-                    onDidSelectItem: debounce(function (selection) {
-                        // preview
-                        updateTerminalScheme(selection)
-                    }, 300)
-                }).then((selection) => {
-                    if (!selection) {
-                        // make sure applied scheme is in-sync
-                        return updateTerminalScheme(getSettings().style)
-                    }
+            await vscode.window.showQuickPick(items, {
+                ignoreFocusOut: true,
+                placeHolder: 'Search Terminal Theme (up/down to preview)',
+                onDidSelectItem: debounce(function (selection) {
+                    // preview
+                    return updateTerminalScheme(selection)
+                }, 300)
+            }).then(async (selection) => {
+                if (!selection) {
+                    // make sure applied scheme is in-sync
+                    return updateTerminalScheme(await getSettings('style'))
+                }
 
-                    // apply
-                    updateConfig(
-                        'terminal_themes.style',
-                        selection,
-                        vscode.window.showInformationMessage(`Terminal Theme: "${selection}" applied`)
-                    )
-                })
+                // apply
+                return updateConfig(
+                    'terminal_themes.style',
+                    selection,
+                    vscode.window.showInformationMessage(`Terminal Theme: "${selection}" applied`)
+                )
             })
-        )
-    }
+        })
+    )
 
     // auto update on change
-    vscode.workspace.onDidChangeConfiguration((event) => {
+    vscode.workspace.onDidChangeConfiguration(async (event) => {
         if (enabled && event.affectsConfiguration('terminal_themes.style')) {
-            updateTerminalScheme(getSettings().style)
+            return updateTerminalScheme(await getSettings('style'))
         }
     })
 }
 
-exports.activate = activate
-
-function deactivate() { }
-exports.deactivate = deactivate
-
-function loadThemes() {
+async function loadThemes() {
     const folder = path.join(__dirname, './themes')
 
-    fs.readdirSync(folder).forEach((file) => {
-        themes.push(...require(`${folder}/${file}`))
+    await fs.readdir(folder, (err, files) => {
+        files.forEach((file) => {
+            themes.push(...require(`${folder}/${file}`))
+        })
     })
 }
 
-function getSettings() {
-    return vscode.workspace.getConfiguration('terminal_themes')
+async function getSettings(key = null) {
+    return vscode.workspace.getConfiguration('terminal_themes')[key]
 }
 
 function getScheme(style) {
@@ -78,30 +70,44 @@ function getScheme(style) {
 }
 
 async function updateTerminalScheme(style) {
-    let current = vscode.workspace.getConfiguration().get(colorsConfig)
+    let current = await vscode.workspace.getConfiguration().get(colorsConfig)
     let data = await clearOldStyles(current)
+
     if (style != removeTheme) {
-        let scheme = await getScheme(style)
+        let scheme = getScheme(style)
         if (!scheme) {
             return vscode.window.showErrorMessage('sorry, theme not found!')
         }
+
         data = Object.assign(data, scheme)
     }
 
-    return await updateConfig(colorsConfig, data)
+    return updateConfig(colorsConfig, data)
 }
 
-function updateConfig(key, data, msg = true) {
-    return vscode.workspace.getConfiguration().update(key, data, true)
-        .then(() => msg, (reason) => vscode.window.showErrorMessage(reason))
+async function updateConfig(key, data) {
+    try {
+        await vscode.workspace.getConfiguration().update(key, data, true)
+    } catch ({ message }) {
+        return vscode.window.showErrorMessage(message)
+    }
 }
 
 function clearOldStyles(list) {
-    return Object.keys(list).reduce((object, key) => {
-        if (!key.includes('terminal')) {
-            object[key] = list[key]
-        }
+    return new Promise((resolve) => {
+        let data = Object.keys(list).reduce((object, key) => {
+            if (!key.includes('terminal')) {
+                object[key] = list[key]
+            }
 
-        return object
-    }, {})
+            return object
+        }, {})
+
+        resolve(data)
+    })
 }
+
+exports.activate = activate
+
+function deactivate() { }
+exports.deactivate = deactivate
