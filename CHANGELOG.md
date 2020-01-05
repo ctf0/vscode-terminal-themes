@@ -33,3 +33,8 @@
 
 - cleanup
 - remove `enable` option
+
+### 0.1.0
+
+- fix undefined `enabled`
+- optimize style applying ops
