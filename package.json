@@ -22,19 +22,18 @@
     ],
     "authors": [
         "Glitchbone",
-        "ctf0"
+        "ctf0",
+        "AmitGujar"
     ],
     "activationEvents": [
         "onCommand:terminal_themes.apply"
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [
-            {
-                "command": "terminal_themes.apply",
-                "title": "Terminal Themes"
-            }
-        ],
+        "commands": [{
+            "command": "terminal_themes.apply",
+            "title": "Terminal Themes"
+        }],
         "configuration": {
             "type": "object",
             "title": "Terminal Themes Configuration",
@@ -80,6 +79,7 @@
                         "Codeschool (base16)",
                         "Cupcake (base16)",
                         "Cupertino (base16)",
+                        "Cybrpnk Nightcity (red)",
                         "Darktooth (base16)",
                         "Default Dark (base16)",
                         "Default Light (base16)",
