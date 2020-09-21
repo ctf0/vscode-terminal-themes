@@ -1,4 +1,28 @@
-[
+[{
+        "name": "Cybrpnk Nightcity (red)",
+        "colors": {
+            "terminal.background": "#272336",
+            "terminal.foreground": "#b7a1ff",
+            "terminalCursor.background": "#A5A2A2",
+            "terminalCursor.foreground": "#A5A2A2",
+            "terminal.ansiBlack": "#090300",
+            "terminal.ansiPink": "#8e1992",
+            "terminal.ansiBrightBlack": "#5C5855",
+            "terminal.ansiBrightPink": "#8e1992",
+            "terminal.ansiBrightCyan": "#2488ff",
+            "terminal.ansiBrightViolet": "#b7a1ff",
+            "terminal.ansiBrightOrange": "#de8d40",
+            "terminal.ansiBrightRed": "#DB2D20",
+            "terminal.ansiBrightWhite": "#F7F7F7",
+            "terminal.ansiBrightYellow": "#FDED02",
+            "terminal.ansiCyan": "#2488ff",
+            "terminal.ansiGrey": "#bbbbbb",
+            "terminal.ansiOrange": "#de8d40",
+            "terminal.ansiRed": "#DB2D20",
+            "terminal.ansiWhite": "#A5A2A2",
+            "terminal.ansiCrimson": "#ffc284"
+        }
+    },
     {
         "name": "Grayscale Dark (red)",
         "colors": {
