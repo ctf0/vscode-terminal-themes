@@ -2,7 +2,7 @@
     "name": "vscode-terminal-themes",
     "displayName": "Vscode Terminal Themes",
     "description": "Terminal Themes for Visual Studio Code",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "ctf0",
     "engines": {
         "vscode": "^1.10.0"
@@ -25,13 +25,13 @@
         "ctf0"
     ],
     "activationEvents": [
-        "onCommand:terminal_themes.apply"
+        "onCommand:terminalThemes.apply"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "terminal_themes.apply",
+                "command": "terminalThemes.apply",
                 "title": "Terminal Themes"
             }
         ],
@@ -39,7 +39,7 @@
             "type": "object",
             "title": "Terminal Themes Configuration",
             "properties": {
-                "terminal_themes.style": {
+                "terminalThemes.style": {
                     "type": "string",
                     "default": "3024 (base16)",
                     "description": "chose a terminal theme",

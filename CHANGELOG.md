@@ -38,3 +38,7 @@
 
 - fix undefined `enabled`
 - optimize style applying ops
+
+### 0.1.1
+
+- fix package settings name
