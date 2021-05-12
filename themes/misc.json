@@ -50,5 +50,31 @@
             "terminal.ansiYellow": "#ff4545",
             "terminal.selectionBackground": "#46464630"
         }
+    },
+    {
+        "name": "Tango Dark",
+        "colors": {
+            "terminal.background": "#2A2B29",
+            "terminal.foreground": "#D3D6CF",
+            "terminalCursor.background": "#000000",
+            "terminalCursor.foreground": "#FFFFFF",
+            "terminal.ansiBlack": "#000000",
+            "terminal.ansiBlue": "#3464A3",
+            "terminal.ansiBrightBlack": "#545652",
+            "terminal.ansiBrightBlue": "#729ECF",
+            "terminal.ansiBrightCyan": "#34E2E2",
+            "terminal.ansiBrightGreen": "#89E234",
+            "terminal.ansiBrightMagenta": "#AC7EA8",
+            "terminal.ansiBrightRed": "#EF2828",
+            "terminal.ansiBrightWhite": "#EDEDEB",
+            "terminal.ansiBrightYellow": "#FBE84F",
+            "terminal.ansiCyan": "#05979A",
+            "terminal.ansiGreen": "#4D9A05",
+            "terminal.ansiMagenta": "#754F7B",
+            "terminal.ansiRed": "#CC0000",
+            "terminal.ansiWhite": "#D3D6CF",
+            "terminal.ansiYellow": "#C3A000",
+            "terminal.selectionBackground": "#D3D6CF"
+        }
     }
 ]
