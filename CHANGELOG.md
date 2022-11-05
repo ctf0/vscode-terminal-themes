@@ -42,3 +42,8 @@
 ### 0.1.1
 
 - fix package settings name
+
+### 0.1.2
+
+- add `Tango Dark` thanx to @trustin
+- add `Cybrpnk Nightcity (red)` thanx to @AmitGujar

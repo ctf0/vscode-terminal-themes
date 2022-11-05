@@ -2,7 +2,7 @@
     "name": "vscode-terminal-themes",
     "displayName": "Vscode Terminal Themes",
     "description": "Terminal Themes for Visual Studio Code",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "ctf0",
     "engines": {
         "vscode": "^1.10.0"
@@ -21,9 +21,10 @@
         "terminal"
     ],
     "authors": [
-        "Glitchbone",
         "ctf0",
-        "AmitGujar"
+        "Glitchbone",
+        "AmitGujar",
+        "trustin"
     ],
     "activationEvents": [
         "onCommand:terminalThemes.apply"
