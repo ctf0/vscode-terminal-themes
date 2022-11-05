@@ -22,7 +22,8 @@
     ],
     "authors": [
         "Glitchbone",
-        "ctf0"
+        "ctf0",
+        "AmitGujar"
     ],
     "activationEvents": [
         "onCommand:terminalThemes.apply"
@@ -80,6 +81,7 @@
                         "Codeschool (base16)",
                         "Cupcake (base16)",
                         "Cupertino (base16)",
+                        "Cybrpnk Nightcity (red)",
                         "Darktooth (base16)",
                         "Default Dark (base16)",
                         "Default Light (base16)",
