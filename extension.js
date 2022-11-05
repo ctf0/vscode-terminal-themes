@@ -4,7 +4,8 @@ const vscode = require('vscode')
 const debounce = require('lodash.debounce')
 
 const REMOVE_THEME = 'Non (remove all terminal styling)'
-const NAME = 'terminal_themes.style'
+const PACKAGE_NAME = 'terminalThemes'
+const NAME = `${PACKAGE_NAME}.style`
 const COLORS_CONFIG = 'workbench.colorCustomizations'
 let themes = []
 
@@ -13,16 +14,16 @@ async function activate(context) {
 
     // quick pick menu
     context.subscriptions.push(
-        vscode.commands.registerCommand('terminal_themes.apply', async () => {
+        vscode.commands.registerCommand(`${PACKAGE_NAME}.apply`, async () => {
             const currentStyles = await getCurrentStyles()
             const rawStyles = await getCleanStyles()
 
             await vscode.window.showQuickPick(
                 themes.map((item) => item.name).concat([REMOVE_THEME]),
                 {
-                    ignoreFocusOut: true,
-                    placeHolder: 'Search Terminal Theme (up/down to preview)',
-                    onDidSelectItem: debounce(async function (selection) {
+                    ignoreFocusOut  : true,
+                    placeHolder     : 'Search Terminal Theme (up/down to preview)',
+                    onDidSelectItem : debounce(async function (selection) {
                         // preview
                         await updateTerminalScheme(selection, rawStyles)
                     }, 300)
@@ -62,11 +63,12 @@ async function loadThemes() {
 }
 
 async function getSettings(key = null) {
-    return vscode.workspace.getConfiguration('terminal_themes')[key]
+    return vscode.workspace.getConfiguration(PACKAGE_NAME)[key]
 }
 
 function getScheme(style) {
     let scheme = themes.filter((item) => item.name == style)
+
     if (scheme.length) {
         return scheme[0].colors
     }
@@ -87,6 +89,7 @@ async function updateTerminalScheme(theme_name, rawStyles = null) {
 
     if (theme_name != REMOVE_THEME) {
         let scheme = getScheme(theme_name)
+
         if (!scheme) {
             return vscode.window.showErrorMessage('sorry, theme not found!')
         }
@@ -100,7 +103,7 @@ async function updateTerminalScheme(theme_name, rawStyles = null) {
 async function updateConfig(key, data) {
     try {
         await vscode.workspace.getConfiguration().update(key, data, true)
-    } catch ({ message }) {
+    } catch ({message}) {
         return vscode.window.showErrorMessage(message)
     }
 }
